@@ -44,7 +44,9 @@ Git 是一个分布式版本控制系统，用于跟踪文件变化，支持多�
 ```bash
 # 在项目目录中初始化Git仓库
 git init
-```  
+```
+⚠️ **注意**：.git 文件夹是 Git 的核心，**不要手动修改或删除**！
+
 **示例**：在课程作业文件夹中执行 `git init`，生成 `.git` 隐藏目录（存储版本数据）。  
 
 
@@ -176,7 +178,6 @@ git stash list
 
 ### 更多资源  
 - [Git 官方文档](https://git-scm.com/docs)  
-- [廖雪峰 Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)  
-- [DUT 软件学院 Git 实践指南](http://soft.dlut.edu.cn/git-guide)（假设校内资源）  
+- [廖雪峰 Git 教程](https://www.liaoxuefeng.com/wiki/896043488029600)    
 
 **Tips**：多使用 `git status` 查看状态，避免操作失误！ 🚀
