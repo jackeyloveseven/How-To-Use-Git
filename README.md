@@ -166,7 +166,14 @@ git stash list
    - `git commit` 后发现漏加文件：`git add missed-file && git commit --amend`  
 
 3. **远程仓库权限问题**  
-   - HTTPS方式需输入账号密码，推荐配置SSH密钥：`ssh-keygen -t rsa -b 4096 -C "your@email.com"`  
+   - HTTPS方式需输入账号密码，推荐配置SSH密钥：`ssh-keygen -t rsa -b 4096 -C "your@email.com"`
+   - 然后将公钥pub文件上传到GitHub的SSH密钥处，如果你的密钥不是默认名或有多个，还需要在本机 `~/.ssh/config`中配置Host  
+   - 如果遇到认证问题，需要：
+   **配置用户名和邮箱（如果还没配置）**
+  ```bash
+git config --global user.name "你的GitHub用户名"
+git config --global user.email "你的邮箱"
+  ```  
 
 
 ### 贡献指南  
